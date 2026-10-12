@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light;
+
+  --primary-50: #ecfdf5;
+  --primary-100: #d1fae5;
+  --primary-200: #a7f3d0;
+  --primary-300: #6ee7b7;
+  --primary-400: #34d399;
+  --primary-500: #10b981;
+  --primary-600: #059669;
+  --primary-700: #047857;
+  --primary-800: #065f46;
+  --primary-900: #064e3b;
+  --primary-950: #022c22;
+
+  --surface-0: #ffffff;
+  --surface-50: #f8fafc;
+  --surface-100: #f1f5f9;
+  --surface-200: #e2e8f0;
+  --surface-300: #cbd5e1;
+  --surface-400: #94a3b8;
+  --surface-500: #64748b;
+  --surface-600: #475569;
+  --surface-700: #334155;
+  --surface-800: #1e293b;
+  --surface-900: #0f172a;
+  --surface-950: #020617;
+
+  --primary-color: var(--primary-500);
+  --primary-text-color: var(--primary-600);
+  --primary-hover-color: var(--primary-600);
+
+  --secondary-color: var(--surface-200);
+  --secondary-text-color: var(--surface-600);
+  --secondary-hover-color: var(--surface-300);
+  --secondary-hover-text-color: var(--surface-700);
+    
+  --text-color: var(--surface-700);
+  --card-background: var(--surface-0);
+  --card-border-color: var(--surface-300);
+  --border-color: var(--surface-200);
+  --hover-background: var(--surface-100);
+  --page-background: var(--surface-50);
+  --drawer-background: var(--surface-100);
+  --header-background: var(--surface-50);
+
+  --inactive-color: var(--surface-500);
+
+  --field-background: var(--surface-0);
+  --field-border-color: var(--surface-300);
+  --field-border-color-hover: var(--surface-400);
+  --field-highlight-color: var(--surface-50);
+  --field-highlight-color-hover: var(--surface-0);
+  --field-lowlight-color: var(--surface-300);
+  --field-lowlight-color-hover: var(--surface-400);
+  --field-focus-color: var(--primary-500);
+  --field-focus-color-hover: var(--primary-400);
+
+  --menu-item-color: var(--surface-700);
+  --menu-item-color-hover: var(--surface-950);
+  --menu-item-active-color: var(--surface-0);
+
+  --btn-text-color: var(--surface-0);
+
+  --positive-color: #42c360;
+  --positive-hover-color: #45d366;
+  --positive-background-alt-color: #e9fcec;
+
+  --negative-color: #f53e36;
+  --negative-hover-color: #ff4f43;
+  --negative-background-alt-color: #fceae7;
+
+  --warning-color: #fa8328;
+  --warning-hover-color: #ff8020;
+  --warning-background-alt-color: #fdf1e7;
+
+  --info-color: #24a4e8;
+  --info-hover-color: #28aef7;
+  --info-background-alt-color: #e8f6fd;
+
+  --q-primary: var(--primary-color);
+  --q-secondary: var(--secondary-color);
+  --q-positive: var(--positive-color);
+  --q-negative: var(--negative-color);
+  --q-warning: var(--warning-color);
+  --q-info: var(--info-color);
+  --q-dark: var(--card-background);
+  --q-dark-page: var(--page-background);
+  --q-transition-duration: 0.2s
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --primary-color: var(--primary-400);
+  --primary-text-color: var(--primary-400);
+  --primary-hover-color: var(--primary-300);
+
+  --secondary-color: var(--surface-800);
+  --secondary-text-color: var(--surface-300);
+  --secondary-hover-color: var(--surface-700);
+  --secondary-hover-text-color: var(--surface-200);
+
+  --text-color: var(--surface-0);
+  --card-background: var(--surface-900);
+  --card-border-color: var(--surface-700);
+  --border-color: var(--surface-800);
+  --hover-background: var(--surface-800);
+  --page-background: var(--surface-950);
+  --drawer-background: var(--surface-900);
+  --header-background: var(--surface-950);
+
+  --inactive-color: var(--surface-300);
+
+  --field-background: var(--surface-950);
+  --field-border-color: var(--surface-600);
+  --field-border-color-hover: var(--surface-500);
+  --field-highlight-color: var(--surface-400);
+  --field-highlight-color-hover: var(--surface-300);
+  --field-lowlight-color: var(--surface-700);
+  --field-lowlight-color-hover: var(--surface-600);
+  --field-focus-color: var(--primary-400);
+  --field-focus-color-hover: var(--primary-300);
+
+  --menu-item-color: var(--surface-300);
+  --menu-item-color-hover: var(--surface-0);
+  --menu-item-active-color: var(--surface-700);
+
+  --btn-text-color: var(--surface-900);
+
+  --positive-color: #3ed984;
+  --positive-hover-color: #3cb157;
+  --positive-background-alt-color: #2d6c3466;
+
+  --negative-color: #f34b46;
+  --negative-hover-color: #eb382b;
+  --negative-background-alt-color: #8a200f66;
+
+  --warning-color: #f7861d;
+  --warning-hover-color: #ec7f19;
+  --warning-background-alt-color: #8e4d0b66;
+
+  --info-color: #52a1fe;
+  --info-hover-color: #4a94e9;
+  --info-background-alt-color: #115c8866;
+
+  --q-primary: var(--primary-color);
+  --q-secondary: var(--secondary-color);
+  --q-positive: var(--positive-color);
+  --q-negative: var(--negative-color);
+  --q-warning: var(--warning-color);
+  --q-info: var(--info-color);
+  --q-dark: var(--card-background);
+  --q-dark-page: var(--page-background);
+}

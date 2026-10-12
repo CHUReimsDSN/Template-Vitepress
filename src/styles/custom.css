@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+  width: 8px;
+  &-track {
+    background: transparent;
+  }
+  &-thumbe {
+    background: var(--field-border-color);
+    border-radius: 3px;
+    &:hover {
+      background: var(--field-border-color-hover);
+    }
+  }
+}
+
+/* HOME PAGE */
+.heading {
+  margin: 4px 0;
+}
+.tagline {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.actions {
+  padding-top: 50px;    
+}
+.VPButton.brand, .VPButton.alt {
+  border-radius: 7px;
+}
+
+/* PAGES */
+.VPDoc {
+  padding-top: 0px;
+  &.has-aside .content-container {
+    max-width: 830px;
+  }
+}
+.vp-doc h1 {
+  font-size: 1.48rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 14px 0;
+}
+.vp-doc h2 {
+  font-size: 1.09rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 10px 0;
+  padding-top: 30px;
+  .header-anchor {
+    top: 1.8rem;
+    font-size: 1.2rem;
+  }
+}
+.vp-doc h3 {
+  font-size: 1rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.vp-doc {
+  .tabs {
+    border: 1px solid var(--card-border-color);
+    border-bottom: 0px;
+  }
+  .vp-code-block-title-bar {
+    border: 1px solid var(--card-border-color);
+    border-bottom: 0px;
+  }
+  div[class*='language-'] {
+    border: 1px solid var(--card-border-color);
+    pre {
+      padding: 16px 0;
+      code {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+.custom-block {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.custom-block-title {
+  display: none;
+}
+.aside-curtain {
+  background: var(--page-background);
+}
+
+/* LAYOUT */
+.VPNavBarTitle {
+  .title {
+    font-size: 1.53rem;
+    border-bottom-color: transparent !important;
+  }
+}
+.VPNavBarSearchButton {
+  border: 1px solid var(--field-border-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--vp-c-bg-alt);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  .text {
+    display: inline;
+    font-size: 0.8125rem;
+  }
+  .keys {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.375rem;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+  }
+  &:hover {
+    border-color: var(--field-border-color-hover)
+  }
+}
+.VPNavBarSearch {
+  padding-left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.VPSidebar {
+  border-right: 1px solid var(--border-color);
+  padding-right: 0.8rem;
+}
+.VPDocOutlineItem {
+  padding-left: 10px;
+  border-left: 1px solid var(--border-color);
+}
+.outline-marker {
+  transform: translateX(16px);
+  width: 1px;
+}
+.outline-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* MISC */
+.box {
+  border: 1px solid var(--card-border-color);
+  border-radius: 8px;
+}
+
+/* Search */
+#localsearch-list {
+  padding-right: 8px;
+}

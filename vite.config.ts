@@ -16,14 +16,5 @@ export default defineConfig({
       formats: ["es"],
       fileName: "index",
     },
-    rolldownOptions: {
-      external: [
-        /^vue$/,
-        /^vitepress(\/.*)?$/,
-        /^node:.*/,
-        /^@localSearchIndex$/,
-        /^@siteData$/,
-      ],
-    },
   },
 });
