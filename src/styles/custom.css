@@ -39,7 +39,7 @@ body {
   padding-top: 0px;
   padding: 1rem 2rem 0;
   &.has-aside .content-container {
-    max-width: 830px;
+    max-width: 830px !important;
   }
 }
 .vp-doc h1 {
@@ -98,7 +98,7 @@ body {
   background-color: var(--page-background);
 }
 .aside-curtain {
-  background: var(--page-background);
+  display: none;
 }
 
 /* LAYOUT */
@@ -110,11 +110,11 @@ body {
 }
 .VPNavBarSearchButton {
   border: 1px solid var(--field-border-color);
-  width: 100%;
+  /* width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  height: auto;
+  height: auto; */
   padding: 0.5rem 0.75rem;
   background-color: var(--vp-c-bg-alt);
   border-radius: 0.5rem;
@@ -139,21 +139,24 @@ body {
     border-color: var(--field-border-color-hover)
   }
 }
-/* .VPNavBarSearch {
-  padding-left: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-} */
 .VPSidebar {
   border-right: 1px solid var(--border-color);
   padding-right: 0.8rem;
 }
 .VPSidebarItem {
-  font-weight: 500;
+  font-weight: 600;
+  padding: 6px 12px;
   color: var(--menu-item-color);
   &:hover {
     color: var(--menu-item-color-hover);
+  }
+  .is_active {
+    color: var(--primary-text-color) !important;
+    font-weight: 800;
+    background: var(--menu-item-active-color) !important;
+    &:hover {
+      background: var(--menu-item-color-hover) !important;
+    }
   }
 }
 .VPDocOutlineItem {
@@ -167,13 +170,6 @@ body {
 .outline-link {
   font-size: 0.8rem;
   font-weight: 500;
-}
-
-
-.menu-item-active {
-  color: var(--primary-text-color) !important;
-  font-weight: 800;
-  background: var(--menu-item-active-color) !important;
 }
 
 
