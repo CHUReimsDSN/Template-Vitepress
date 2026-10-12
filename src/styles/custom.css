@@ -108,13 +108,13 @@ body {
     border-bottom-color: transparent !important;
   }
 }
-.VPNavBarSearchButton {
+/* .VPNavBarSearchButton {
   border: 1px solid var(--field-border-color);
-  /* width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  height: auto; */
+  height: auto;
   padding: 0.5rem 0.75rem;
   background-color: var(--vp-c-bg-alt);
   border-radius: 0.5rem;
@@ -138,7 +138,7 @@ body {
   &:hover {
     border-color: var(--field-border-color-hover)
   }
-}
+} */
 .VPSidebar {
   border-right: 1px solid var(--border-color);
   padding-right: 0.8rem;
@@ -148,16 +148,19 @@ body {
   color: var(--menu-item-color);
   > .item {
     border-radius: 6px;
+    .VPLink {
+      padding-left: 4px
+    }
     .VPLink:hover {
       color: var(--menu-item-color-hover);
     }
   }
+  > .item:hover {
+    background: var(--menu-item-active-color) !important;
+  }
   .is-active {
     color: var(--primary-text-color) !important;
-    font-weight: 800;
-    > .item {
-      background: var(--menu-item-active-color) !important;
-    }
+    font-weight: 900;
   }
 }
 .VPDocOutlineItem {
