@@ -146,16 +146,17 @@ body {
 .VPSidebarItem {
   font-weight: 600;
   color: var(--menu-item-color);
-  &:hover {
-    color: var(--menu-item-color-hover);
-    background: var(--menu-item-color-hover) !important;
+  > .item {
+    border-radius: 6px;
+    .VPLink:hover {
+      color: var(--menu-item-color-hover);
+    }
   }
   .is-active {
     color: var(--primary-text-color) !important;
     font-weight: 800;
-    background: var(--menu-item-active-color) !important;
-    &:hover {
-      background: var(--menu-item-color-hover) !important;
+    > .item {
+      background: var(--menu-item-active-color) !important;
     }
   }
 }
