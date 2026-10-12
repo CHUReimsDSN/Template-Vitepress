@@ -1,4 +1,4 @@
-import type { UserConfig } from "vitepress";
+import type { UserConfig } from 'vitepress'
 
 export const vitepressBigBangConfig: UserConfig = {
   themeConfig: {
@@ -36,4 +36,5 @@ export const vitepressBigBangConfig: UserConfig = {
       light: "light-plus",
     },
   },
+
 };
