@@ -18,7 +18,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./style.css": "./src/styles/index.css"
+    "./style.css": "./src/styles/index.css",
+    "./scripts": "./src-scripts/index.ts"
   },
   "scripts": {
     "build": "vite build"

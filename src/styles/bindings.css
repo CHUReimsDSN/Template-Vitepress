@@ -1,5 +1,4 @@
 :root {
-
   --vp-sidebar-bg-color: var(--page-background);
   --vp-nav-bg-color: var(--page-background);
 
@@ -56,4 +55,8 @@
   --vp-custom-block-tip-text: var(--secondary-text-color);
   --vp-custom-block-info-bg: var(--info-background-alt-color);
   --vp-custom-block-info-text: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-color) !important;
 }
