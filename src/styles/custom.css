@@ -29,7 +29,6 @@
 
 /* PAGES */
 .VPDoc {
-  background-color: var(--page-background);
   padding-top: 0px;
   &.has-aside .content-container {
     max-width: 830px;
