@@ -1,18 +1,20 @@
 {
   "name": "vitepress-bigbang",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Vitepress BigBangTheme",
-  "devDependencies": {
-    "@quasar/extras": "^2.1.0",
-    "@types/node": "^26.6.4",
+  "dependencies": {
+    "vitepress-plugin-mermaid": "^2.0.17",
+    "vitepress-plugin-group-icons": "^1.7.6",
     "mermaid": "^10.8.0",
     "quasar": "^2.34.0",
-    "quasar-app-extension-big-bang": "^0.0.11",
+    "@quasar/extras": "^2.1.0",
+    "quasar-app-extension-big-bang": "^0.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
     "ts-morph": "^27.0.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "vitepress-plugin-mermaid": "^2.0.17",
-    "vitepress-plugin-group-icons": "^1.7.6"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "vitepress": "^2.0.0-alpha.20"
