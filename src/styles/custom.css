@@ -146,15 +146,17 @@ body {
 .VPSidebarItem {
   > .item {
     .VPLink {
-      font-weight: 600;
-      color: var(--menu-item-color);
-      border-radius: 6px;
-      padding-left: 6px;
-      transition: all 0.25s;
-    }
-    .VPLink:hover {
-      color: var(--menu-item-active-color);
-      background-color: var(--menu-item-active-color) !important;
+      p {
+        font-weight: 600;
+        color: var(--menu-item-color);
+        border-radius: 6px;
+        padding-left: 8px;
+        transition: all 0.25s;
+      }
+      p:hover {
+        color: var(--menu-item-active-color);
+        background-color: var(--menu-item-active-color) !important;
+      }
     }
   }
   /* .is-active {
