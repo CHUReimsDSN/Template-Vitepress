@@ -149,8 +149,9 @@ body {
   color: var(--menu-item-color);
   &:hover {
     color: var(--menu-item-color-hover);
+    background: var(--menu-item-color-hover) !important;
   }
-  .is_active {
+  .is-active {
     color: var(--primary-text-color) !important;
     font-weight: 800;
     background: var(--menu-item-active-color) !important;
