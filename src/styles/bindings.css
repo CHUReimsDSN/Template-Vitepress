@@ -47,6 +47,7 @@
   --vp-sidebar-width: 280px;
 
   --vp-nav-screen-bg-color: var(--page-background);
+  --vp-nav-logo-height: 1.8rem;
 
   --vp-custom-block-warning-bg: var(--warning-background-alt-color);
   --vp-custom-block-warning-text: var(--secondary-text-color);
