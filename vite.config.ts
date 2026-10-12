@@ -17,11 +17,13 @@ export default defineConfig({
       fileName: "index",
     },
     rolldownOptions: {
-      external: (id) =>
-        /^(vue|quasar|vitepress)(\/|$)/.test(id) ||
-        id.startsWith("node:") ||
-        id === "@localSearchIndex" ||
-        id === "@siteData",
+      external: [
+        /^vue$/,
+        /^vitepress(\/.*)?$/,
+        /^node:.*/,
+        /^@localSearchIndex$/,
+        /^@siteData$/,
+      ],
     },
   },
 });

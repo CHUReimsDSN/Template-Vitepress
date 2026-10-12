@@ -1,9 +1,4 @@
-import {
-  groupIconMdPlugin,
-  groupIconVitePlugin,
-} from "vitepress-plugin-group-icons";
-import { fileURLToPath, URL } from "node:url";
-import type { UserConfig } from 'vitepress'
+import type { UserConfig } from "vitepress";
 
 export const vitepressBigBangConfig: UserConfig = {
   themeConfig: {
@@ -40,9 +35,5 @@ export const vitepressBigBangConfig: UserConfig = {
       dark: "dark-plus",
       light: "light-plus",
     },
-    config(md) {
-      md.use(groupIconMdPlugin);
-    },
   },
-
 };

@@ -1,14 +1,12 @@
 {
   "name": "vitepress-bigbang",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Vitepress BigBangTheme",
   "dependencies": {
     "@quasar/extras": "^2.1.0",
-    "mermaid": "^10.8.0",
+    "@quasar/app-vite": "^3.10.2",
     "quasar": "^2.34.0",
-    "quasar-app-extension-big-bang": "^0.0.11",
-    "vitepress-plugin-group-icons": "^1.7.6",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "quasar-app-extension-big-bang": "^0.0.11"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
