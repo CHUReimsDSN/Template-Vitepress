@@ -149,18 +149,21 @@ body {
   > .item {
     border-radius: 6px;
     .VPLink {
-      padding-left: 4px
+      padding-left: 6px
     }
     .VPLink:hover {
       color: var(--menu-item-color-hover);
+      background: var(--menu-item-active-color) !important;
     }
-  }
-  > .item:hover {
-    background: var(--menu-item-active-color) !important;
   }
   .is-active {
     color: var(--primary-text-color) !important;
     font-weight: 900;
+    > .item {
+      .VPLink {
+        background: var(--menu-item-active-color) !important;
+      }
+    }
   }
 }
 .VPDocOutlineItem {
