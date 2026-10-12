@@ -12,6 +12,13 @@
   }
 }
 
+body {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-color) !important;
+  background-color: var(--page-background);
+}
+
 /* HOME PAGE */
 .heading {
   margin: 4px 0;
