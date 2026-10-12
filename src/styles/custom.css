@@ -148,13 +148,13 @@ body {
     .VPLink {
       p {
         font-weight: 600;
-        color: var(--menu-item-color);
+        color: var(--menu-item-color) !important;
         border-radius: 6px;
         padding-left: 8px;
         transition: all 0.25s;
       }
       p:hover {
-        color: var(--menu-item-active-color);
+        color: var(--menu-item-active-color) !important;
         background-color: var(--menu-item-active-color) !important;
       }
     }
