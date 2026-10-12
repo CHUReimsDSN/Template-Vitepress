@@ -1,2 +1,2 @@
-import type { UserConfig } from 'vitepress';
+import { UserConfig } from 'vitepress';
 export declare const vitepressBigBangConfig: UserConfig;

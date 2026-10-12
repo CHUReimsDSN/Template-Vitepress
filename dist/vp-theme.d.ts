@@ -1,5 +1,5 @@
-import { type TPrimaryLabel, type TSurfaceLabel } from "quasar-app-extension-big-bang";
-import type { Theme } from "vitepress";
+import { TPrimaryLabel, TSurfaceLabel } from 'quasar-app-extension-big-bang';
+import { Theme } from 'vitepress';
 export type BigBangThemeOptions = {
     primary?: TPrimaryLabel;
     surface?: TSurfaceLabel;
