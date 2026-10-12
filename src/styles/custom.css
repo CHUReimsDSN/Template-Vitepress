@@ -159,15 +159,18 @@ body {
       }
     }
   }
-  /* .is-active {
-    color: var(--primary-text-color) !important;
-    font-weight: 900;
+  .is-active {
     > .item {
       .VPLink {
-        background: var(--menu-item-active-color) !important;
+        p {
+          color: var(--primary-text-color) !important;
+          font-weight: 900;
+          background: var(--menu-item-active-color) !important;
+
+        }
       }
     }
-  } */
+  }
 }
 .VPDocOutlineItem {
   padding-left: 10px;
