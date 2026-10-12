@@ -145,18 +145,27 @@ body {
 }
 .VPSidebarItem {
   font-weight: 600;
-  color: var(--menu-item-color);
   > .item {
     .VPLink {
+      color: var(--menu-item-color);
       border-radius: 6px;
-      padding-left: 6px
+      padding-left: 6px;
+      transition: color background 0.25s;
     }
     .VPLink:hover {
       color: var(--menu-item-color-hover);
       background: var(--menu-item-active-color) !important;
     }
   }
-
+  /* .is-active {
+    color: var(--primary-text-color) !important;
+    font-weight: 900;
+    > .item {
+      .VPLink {
+        background: var(--menu-item-active-color) !important;
+      }
+    }
+  } */
 }
 .VPDocOutlineItem {
   padding-left: 10px;
