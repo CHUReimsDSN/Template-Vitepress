@@ -27,7 +27,7 @@ icon: api
         apiDefinitionContent = apiDefinitionContent.concat(`
 
 ## ${node.getName()}
-\`\`\`typescript
+\`\`\`ts
 ${node.getText()}
 \`\`\`
 `);
