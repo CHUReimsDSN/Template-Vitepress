@@ -37,7 +37,7 @@ body {
 /* PAGES */
 .VPDoc {
   padding-top: 0px;
-  padding: 0 2rem 0;
+  padding: 1rem 2rem 0 !important;
   &.has-aside .content-container {
     max-width: 830px !important;
   }
