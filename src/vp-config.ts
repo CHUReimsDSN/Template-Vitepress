@@ -44,17 +44,5 @@ export const vitepressBigBangConfig: UserConfig = {
       md.use(groupIconMdPlugin);
     },
   },
-  vite: {
-    resolve: {
-      alias: [
-        {
-          find: /^.*\/VPSidebarGroup\.vue$/,
-          replacement: fileURLToPath(
-            new URL("./components/SidebarGroup.vue", import.meta.url),
-          ),
-        },
-      ],
-    },
-    plugins: [groupIconVitePlugin()],
-  },
+
 };

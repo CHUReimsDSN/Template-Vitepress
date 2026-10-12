@@ -1,12 +1,12 @@
-import { Dark as e, QBanner as t, QBtn as n, QBtnDropdown as r, QBtnGroup as i, QBtnToggle as a, QCard as o, QDate as s, QDialog as c, QDrawer as l, QExpansionItem as u, QField as d, QHeader as f, QIcon as p, QInput as m, QItem as ee, QLayout as h, QList as g, QMenu as te, QRadio as ne, QSelect as _, QTab as re, QTabs as v, QToggle as y, QTooltip as b, QTree as x, QUploader as ie, Quasar as S } from "quasar";
-import C from "vitepress/theme";
-import { createBlock as ae, createElementBlock as oe, createVNode as w, defineComponent as se, openBlock as T, unref as ce, withCtx as le } from "vue";
-import ue from "vitepress/dist/client/theme-default/components/VPNavBarSearch.vue";
-import { createRequire as E } from "node:module";
+import { Dark as e, QBanner as t, QBtn as n, QBtnDropdown as r, QBtnGroup as i, QBtnToggle as a, QCard as o, QDate as s, QDialog as c, QDrawer as l, QExpansionItem as u, QField as d, QHeader as f, QIcon as p, QInput as m, QItem as h, QLayout as g, QList as _, QMenu as v, QRadio as y, QSelect as b, QTab as x, QTabs as S, QToggle as C, QTooltip as w, QTree as T, QUploader as E, Quasar as D } from "quasar";
+import O from "vitepress/theme";
+import { createBlock as k, createElementBlock as A, createVNode as j, defineComponent as M, openBlock as N, unref as P, withCtx as F } from "vue";
+import I from "vitepress/dist/client/theme-default/components/VPNavBarSearch.vue";
+import "node:module";
 import "node:fs";
 import "node:path";
-import { URL as D, fileURLToPath as O } from "node:url";
-var k = Object.freeze({
+import "node:url";
+var L = Object.freeze({
 	Contrast: {
 		reference: "light-dark(var(--surface-800), var(--surface-200))",
 		p50: "light-dark(var(--surface-950), var(--surface-50))",
@@ -245,7 +245,7 @@ var k = Object.freeze({
 		p900: "#881337",
 		p950: "#4c0519"
 	}
-}), A = Object.freeze(new Map(Object.entries(k))), j = Object.freeze({
+}), R = Object.freeze(new Map(Object.entries(L))), z = Object.freeze({
 	Slate: {
 		reference: "#46748b",
 		s0: "#ffffff",
@@ -426,7 +426,7 @@ var k = Object.freeze({
 		s900: "#1e211a",
 		s950: "#0f100c"
 	}
-}), M = Object.freeze(new Map(Object.entries(j))), N = class {
+}), B = Object.freeze(new Map(Object.entries(z))), V = class {
 	static keyName = "quasar-big-bang-theme";
 	static serializerSeparator = "|";
 	static save(e, t) {
@@ -439,9 +439,9 @@ var k = Object.freeze({
 };
 //#endregion
 //#region node_modules/quasar-app-extension-big-bang/src/core/default-props.ts
-function P() {
-	let e = "fade", S = "fade", C = "keyboard_arrow_down";
-	h.props.view = {
+function H() {
+	let e = "fade", D = "fade", O = "keyboard_arrow_down";
+	g.props.view = {
 		type: String,
 		default: "lHh LpR fFf"
 	}, n.props.unelevated = {
@@ -467,7 +467,7 @@ function P() {
 		default: !0
 	}, r.props.dropdownIcon = {
 		type: String,
-		default: C
+		default: O
 	}, a.props.unelevated = {
 		type: Boolean,
 		default: !0
@@ -480,13 +480,13 @@ function P() {
 	}, o.props.bordered = {
 		type: Boolean,
 		default: !0
-	}, te.props.transitionDuration.default = 150, f.props.bordered = {
+	}, v.props.transitionDuration.default = 150, f.props.bordered = {
 		type: Boolean,
 		default: !0
 	}, l.props.bordered = {
 		type: Boolean,
 		default: !0
-	}, ee.props.dense = {
+	}, h.props.dense = {
 		type: Boolean,
 		default: !0
 	}, u.props.dense = {
@@ -500,20 +500,20 @@ function P() {
 		default: 150
 	}, u.props.expandIcon = {
 		type: String,
-		default: C
+		default: O
 	}, p.props.size = {
 		type: String,
 		default: "20px"
-	}, v.props.noCaps = {
+	}, S.props.noCaps = {
 		type: Boolean,
 		default: !0
-	}, re.props.noCaps = {
+	}, x.props.noCaps = {
 		type: Boolean,
 		default: !0
 	}, s.props.minimal = {
 		type: Boolean,
 		default: !0
-	}, g.props.dense = {
+	}, _.props.dense = {
 		type: Boolean,
 		default: !0
 	}, d.props.dense = {
@@ -534,31 +534,31 @@ function P() {
 	}, m.props.hideBottomSpace = {
 		type: Boolean,
 		default: !0
-	}, _.props.dense = {
+	}, b.props.dense = {
 		type: Boolean,
 		default: !0
-	}, _.props.outlined = {
+	}, b.props.outlined = {
 		type: Boolean,
 		default: !0
-	}, _.props.optionsDense = {
+	}, b.props.optionsDense = {
 		type: Boolean,
 		default: !0
-	}, _.props.hideBottomSpace = {
+	}, b.props.hideBottomSpace = {
 		type: Boolean,
 		default: !0
-	}, _.props.dropdownIcon = {
+	}, b.props.dropdownIcon = {
 		type: String,
-		default: C
+		default: O
+	}, C.props.dense = {
+		type: Boolean,
+		default: !0
 	}, y.props.dense = {
 		type: Boolean,
 		default: !0
-	}, ne.props.dense = {
+	}, E.props.bordered = {
 		type: Boolean,
 		default: !0
-	}, ie.props.bordered = {
-		type: Boolean,
-		default: !0
-	}, b.props.transitionDuration.default = 150, b.props.transitionShow.default = e, b.props.transitionHide.default = S, t.props.dense = {
+	}, w.props.transitionDuration.default = 150, w.props.transitionShow.default = e, w.props.transitionHide.default = D, t.props.dense = {
 		type: Boolean,
 		default: !0
 	}, c.props.transitionDuration.default = 150, c.props.transitionShow = {
@@ -566,27 +566,27 @@ function P() {
 		default: e
 	}, c.props.transitionHide = {
 		type: String,
-		default: S
-	}, x.props.dense = {
+		default: D
+	}, T.props.dense = {
 		type: Boolean,
 		default: !0
-	}, x.props.duration.default = 150, x.props.noConnectors = {
+	}, T.props.duration.default = 150, T.props.noConnectors = {
 		type: Boolean,
 		default: !0
-	}, x.props.icon = {
+	}, T.props.icon = {
 		type: String,
 		default: "chevron_right"
 	};
 }
 //#endregion
 //#region node_modules/quasar-app-extension-big-bang/src/core/big-bang-theme.ts
-var F = class {
+var U = class {
 	static _primary = "Emerald";
 	static _surface = "Slate";
 	static _saveStrategy = "none";
 	constructor() {}
 	static setPrimary(e) {
-		let t = A.get(e);
+		let t = R.get(e);
 		if (t) {
 			this._primary = e;
 			for (let e of Object.entries(t)) document.documentElement.style.setProperty(`--primary-${e[0].replace("p", "")}`, e[1]);
@@ -597,7 +597,7 @@ var F = class {
 		return this._primary;
 	}
 	static setSurface(e) {
-		let t = M.get(e);
+		let t = B.get(e);
 		if (t) {
 			this._surface = e;
 			for (let e of Object.entries(t)) document.documentElement.style.setProperty(`--surface-${e[0].replace("s", "")}`, e[1]);
@@ -611,38 +611,38 @@ var F = class {
 		this._saveStrategy = e;
 	}
 	static trySaveTheme() {
-		return this._saveStrategy !== "none" && (N.save(this._primary, this._surface), !0);
+		return this._saveStrategy !== "none" && (V.save(this._primary, this._surface), !0);
 	}
 	static tryLoadTheme() {
 		if (this._saveStrategy === "none") return !1;
-		let e = N.load();
+		let e = V.load();
 		return this.setPrimary(e[0]), this.setSurface(e[1]), !0;
 	}
 	static getSaveMode() {
 		return this._saveStrategy;
 	}
 	static setupDefaultProps() {
-		P();
+		H();
 	}
-}, I = { class: "flex flex-center full-width q-pb-md q-pt-sm" }, L = /* @__PURE__ */ se({
+}, W = { class: "flex flex-center full-width q-pb-md q-pt-sm" }, G = /* @__PURE__ */ M({
 	__name: "AsideBefore",
 	setup(e) {
-		return (e, t) => (T(), oe("div", I, [w(ue)]));
+		return (e, t) => (N(), A("div", W, [j(I)]));
 	}
-}), R = {
+}), K = {
 	__name: "Layout",
 	setup(e) {
-		let { Layout: t } = C;
-		return (e, n) => (T(), ae(ce(t), null, {
-			"sidebar-nav-before": le(() => [w(L)]),
+		let { Layout: t } = O;
+		return (e, n) => (N(), k(P(t), null, {
+			"sidebar-nav-before": F(() => [j(G)]),
 			_: 1
 		}));
 	}
 };
 //#endregion
 //#region src/vp-theme.ts
-function z(t, n) {
-	if (t.use(S, { plugins: { Dark: e } }), typeof window < "u") {
+function q(t, n) {
+	if (t.use(D, { plugins: { Dark: e } }), typeof window < "u") {
 		let t = () => {
 			e.set(document.documentElement.classList.contains("dark"));
 		};
@@ -651,198 +651,20 @@ function z(t, n) {
 			attributeFilter: ["class"]
 		});
 	}
-	F.setPrimary(n.primary), F.setSurface(n.surface), F.setupDefaultProps();
+	U.setPrimary(n.primary), U.setSurface(n.surface), U.setupDefaultProps();
 }
-function B(e = {}) {
+function J(e = {}) {
 	return {
-		extends: C,
-		Layout: R,
+		extends: O,
+		Layout: K,
 		enhanceApp({ app: t }) {
-			z(t, e);
+			q(t, e);
 		}
 	};
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/icon/defaults.js
-var V = Object.freeze({
-	left: 0,
-	top: 0,
-	width: 16,
-	height: 16
-}), H = Object.freeze({
-	rotate: 0,
-	vFlip: !1,
-	hFlip: !1
-}), U = Object.freeze({
-	...V,
-	...H
-}), de = Object.freeze({
-	...U,
-	body: "",
-	hidden: !1
-}), fe = Object.freeze({
-	width: null,
-	height: null
-}), pe = Object.freeze({
-	...fe,
-	...H
-});
-//#endregion
-//#region node_modules/@iconify/utils/lib/icon/transformations.js
-function me(e, t) {
-	let n = {};
-	!e.hFlip != !t.hFlip && (n.hFlip = !0), !e.vFlip != !t.vFlip && (n.vFlip = !0);
-	let r = ((e.rotate || 0) + (t.rotate || 0)) % 4;
-	return r && (n.rotate = r), n;
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/icon/merge.js
-function W(e, t) {
-	let n = me(e, t);
-	for (let r in de) r in H ? r in e && !(r in n) && (n[r] = H[r]) : r in t ? n[r] = t[r] : r in e && (n[r] = e[r]);
-	return n;
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/icon-set/tree.js
-function he(e, t) {
-	let n = e.icons, r = e.aliases || Object.create(null), i = Object.create(null);
-	function a(e) {
-		if (n[e]) return i[e] = [];
-		if (!(e in i)) {
-			i[e] = null;
-			let t = r[e] && r[e].parent, n = t && a(t);
-			n && (i[e] = [t].concat(n));
-		}
-		return i[e];
-	}
-	return (t || Object.keys(n).concat(Object.keys(r))).forEach(a), i;
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/icon-set/get-icon.js
-function G(e, t, n) {
-	let r = e.icons, i = e.aliases || Object.create(null), a = {};
-	function o(e) {
-		a = W(r[e] || i[e], a);
-	}
-	return o(t), n.forEach(o), W(e, a);
-}
-function ge(e, t) {
-	if (e.icons[t]) return G(e, t, []);
-	let n = he(e, [t])[t];
-	return n ? G(e, t, n) : null;
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/size.js
-var _e = /(-?[0-9.]*[0-9]+[0-9.]*)/g, ve = /^-?[0-9.]*[0-9]+[0-9.]*$/g;
-function K(e, t, n) {
-	if (t === 1) return e;
-	if (n ||= 100, typeof e == "number") return Math.ceil(e * t * n) / n;
-	if (typeof e != "string") return e;
-	let r = e.split(_e);
-	if (r === null || !r.length) return e;
-	let i = [], a = r.shift(), o = ve.test(a);
-	for (;;) {
-		if (o) {
-			let e = parseFloat(a);
-			isNaN(e) ? i.push(a) : i.push(Math.ceil(e * t * n) / n);
-		} else i.push(a);
-		if (a = r.shift(), a === void 0) return i.join("");
-		o = !o;
-	}
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/defs.js
-function ye(e, t = "defs") {
-	let n = "", r = e.indexOf("<" + t);
-	for (; r >= 0;) {
-		let i = e.indexOf(">", r), a = e.indexOf("</" + t);
-		if (i === -1 || a === -1) break;
-		let o = e.indexOf(">", a);
-		if (o === -1) break;
-		n += e.slice(i + 1, a).trim(), e = e.slice(0, r).trim() + e.slice(o + 1);
-	}
-	return {
-		defs: n,
-		content: e
-	};
-}
-function be(e, t) {
-	return e ? "<defs>" + e + "</defs>" + t : t;
-}
-function xe(e, t, n) {
-	let r = ye(e);
-	return be(r.defs, t + r.content + n);
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/build.js
-var Se = (e) => e === "unset" || e === "undefined" || e === "none";
-function Ce(e, t) {
-	let n = {
-		...U,
-		...e
-	}, r = {
-		...pe,
-		...t
-	}, i = {
-		left: n.left,
-		top: n.top,
-		width: n.width,
-		height: n.height
-	}, a = n.body;
-	[n, r].forEach((e) => {
-		let t = [], n = e.hFlip, r = e.vFlip, o = e.rotate;
-		n ? r ? o += 2 : (t.push("translate(" + (i.width + i.left).toString() + " " + (0 - i.top).toString() + ")"), t.push("scale(-1 1)"), i.top = i.left = 0) : r && (t.push("translate(" + (0 - i.left).toString() + " " + (i.height + i.top).toString() + ")"), t.push("scale(1 -1)"), i.top = i.left = 0);
-		let s;
-		switch (o < 0 && (o -= Math.floor(o / 4) * 4), o %= 4, o) {
-			case 1:
-				s = i.height / 2 + i.top, t.unshift("rotate(90 " + s.toString() + " " + s.toString() + ")");
-				break;
-			case 2:
-				t.unshift("rotate(180 " + (i.width / 2 + i.left).toString() + " " + (i.height / 2 + i.top).toString() + ")");
-				break;
-			case 3: s = i.width / 2 + i.left, t.unshift("rotate(-90 " + s.toString() + " " + s.toString() + ")");
-		}
-		o % 2 == 1 && (i.left !== i.top && (s = i.left, i.left = i.top, i.top = s), i.width !== i.height && (s = i.width, i.width = i.height, i.height = s)), t.length && (a = xe(a, "<g transform=\"" + t.join(" ") + "\">", "</g>"));
-	});
-	let o = r.width, s = r.height, c = i.width, l = i.height, u, d;
-	o === null ? (d = s === null ? "1em" : s === "auto" ? l : s, u = K(d, c / l)) : (u = o === "auto" ? c : o, d = s === null ? K(u, l / c) : s === "auto" ? l : s);
-	let f = {}, p = (e, t) => {
-		Se(t) || (f[e] = t.toString());
-	};
-	p("width", u), p("height", d);
-	let m = [
-		i.left,
-		i.top,
-		c,
-		l
-	];
-	return f.viewBox = m.join(" "), {
-		attributes: f,
-		viewBox: m,
-		body: a
-	};
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/url.js
-function we(e) {
-	return e.replace(/"/g, "'").replace(/%/g, "%25").replace(/#/g, "%23").replace(/</g, "%3C").replace(/>/g, "%3E").replace(/\s+/g, " ");
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/encode-svg-for-css.js
-function q(e) {
-	let t = e.startsWith("<svg>") ? e.replace("<svg>", "<svg >") : e;
-	return !t.includes(" xmlns:xlink=") && t.includes(" xlink:") && (t = t.replace("<svg ", "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" ")), t.includes(" xmlns=") || (t = t.replace("<svg ", "<svg xmlns=\"http://www.w3.org/2000/svg\" ")), we(t);
-}
-//#endregion
-//#region node_modules/@iconify/utils/lib/svg/html.js
-function Te(e, t) {
-	let n = e.indexOf("xlink:") === -1 ? "" : " xmlns:xlink=\"http://www.w3.org/1999/xlink\"";
-	for (let e in t) n += " " + e + "=\"" + t[e] + "\"";
-	return "<svg xmlns=\"http://www.w3.org/2000/svg\"" + n + ">" + e + "</svg>";
 }
 //#endregion
 //#region node_modules/vitepress-plugin-group-icons/dist/index.mjs
-var J = {
+var Y = {
 	packageManager: {
 		pnpm: {
 			dark: "vscode-icons:file-type-pnpm",
@@ -919,7 +741,7 @@ var J = {
 			light: "vscode-icons:file-type-light-gradle"
 		}
 	}
-}, Ee = {
+}, X = {
 	"package.json": "vscode-icons:file-type-node",
 	"uno.config.ts": "vscode-icons:file-type-unocss",
 	".sass": "vscode-icons:file-type-sass",
@@ -994,27 +816,19 @@ var J = {
 	".gjs": "vscode-icons:file-type-glimmer",
 	".gts": "vscode-icons:file-type-glimmer",
 	".env": "vscode-icons:file-type-dotenv"
-}, De = {
-	...J.packageManager,
-	...J.frameworks,
-	...J.tools,
-	...J.misc,
-	...Ee
 };
-function Oe(e, t) {
-	try {
-		if (e.size !== t.size) return !1;
-		for (let n of e) if (!t.has(n)) return !1;
-		return !0;
-	} catch {
-		return !1;
-	}
-}
-var Y = /\s~(~?)([^~]+)~\1/, ke = /<label\b(?![^>]+\bdata-title\b)[^>]*>(.*?)<\/label>/g, Ae = /(<label[^>]*>)(.*?)(<\/label>)/g, je = /\[((?:[^[\]]|\[[^[\]]*\])*)\]/;
-function Me(e, t) {
+({
+	...Y.packageManager,
+	...Y.frameworks,
+	...Y.tools,
+	...Y.misc,
+	...X
+});
+var Z = /\s~(~?)([^~]+)~\1/, Q = /<label\b(?![^>]+\bdata-title\b)[^>]*>(.*?)<\/label>/g, $ = /(<label[^>]*>)(.*?)(<\/label>)/g, ee = /\[((?:[^[\]]|\[[^[\]]*\])*)\]/;
+function te(e, t) {
 	let n = t || { titleBar: { includeSnippet: !1 } }, r = e.renderer.rules["container_code-group_open"];
-	r && (e.renderer.rules["container_code-group_open"] = (...t) => r(...t).replace(ke, (t, n) => `<label data-title="${e.utils.escapeHtml(n)}"${t.slice(6)}`)), e.renderer.rules["container_code-group_open"] = (...e) => r(...e).replace(Ae, (e, t, n, r) => {
-		let i = n.match(Y);
+	r && (e.renderer.rules["container_code-group_open"] = (...t) => r(...t).replace(Q, (t, n) => `<label data-title="${e.utils.escapeHtml(n)}"${t.slice(6)}`)), e.renderer.rules["container_code-group_open"] = (...e) => r(...e).replace($, (e, t, n, r) => {
+		let i = n.match(Z);
 		return `${t}${i ? n.replace(i[0], "") : n}${r}`;
 	});
 	let i = e.renderer.rules.fence;
@@ -1027,9 +841,9 @@ function Me(e, t) {
 			}
 			if (r[e].type === "container_code-group_close") break;
 		}
-		let c = o.info.match(je), l = n.titleBar.includeSnippet;
+		let c = o.info.match(ee), l = n.titleBar.includeSnippet;
 		if (!s && c && (!o.src || l)) {
-			let n = c[1].match(Y);
+			let n = c[1].match(Z);
 			return `<div class="vp-code-block-title">
       <div class="vp-code-block-title-bar">
           <span class="vp-code-block-title-text" data-title="${e.utils.escapeHtml(c[1])}">${n ? c[1].replace(n[0], "") : c[1]}</span>
@@ -1041,139 +855,9 @@ function Me(e, t) {
 		return i(...t);
 	});
 }
-var Ne = /^https?:\/\//;
-async function Pe(e, t) {
-	let n = {
-		...De,
-		...t.customIcon
-	};
-	return { css: "\n.vp-code-block-title [data-title]::before,\n.vp-code-group [data-title]::before {\n  display: inline-block;\n  width: 1em;\n  height: 1em;\n  margin-right: 0.5em;\n  margin-bottom: -0.2em;\n  background: var(--icon) no-repeat center / contain;\n}\n\n.vp-code-block-title-bar {\n  position: relative;\n  margin: 16px -24px 0 -24px;\n  background-color: var(--vp-code-block-bg);\n  overflow-x: auto;\n  font-size: 14px;\n  font-weight: 500;\n  color: var(--vp-code-tab-text-color);\n  white-space: nowrap;\n  transition: background-color 0.5s;\n  border-radius: 8px 8px 0 0;\n  padding:0 12px;\n  box-shadow: inset 0 -1px var(--vp-code-tab-divider);\n}\n\n.custom-block .vp-code-block-title-bar {\n  margin: 16px 0 0 0;\n}\n\n@media (min-width: 640px) {\n  .vp-code-block-title-bar {\n    margin: 16px 0 0 0;\n  }\n}\n\n.vp-code-block-title-text {\n  padding: 0 12px;\n  line-height: 48px;\n}\n\n\n.vp-code-block-title div[class*=language-] {\n  margin-top: 0 !important;\n  border-top-left-radius: 0 !important;\n  border-top-right-radius: 0 !important;\n}\n" + await Z(Ie(/* @__PURE__ */ new Set([...e, ...t.defaultLabels || []]), n)) };
-}
-function Fe(e) {
-	return typeof e == "string" ? `s:${e}` : `o:${JSON.stringify(e)}`;
-}
-function Ie(e, t) {
-	let n = /* @__PURE__ */ new Map(), r = Object.entries(t).sort(([e], [t]) => t.length - e.length), i = r.filter(([e]) => !e.includes(".")), a = r.filter(([e]) => e.includes(".")), o = (e, t) => {
-		let r = Fe(e), i = n.get(r);
-		i ? i.labels.push(t) : n.set(r, {
-			icon: e,
-			labels: [t]
-		});
-	};
-	for (let t of e) {
-		let e = t.match(Y);
-		if (e) {
-			let n = e[2];
-			o(n, t);
-		} else {
-			let e = t.toLowerCase(), n = i.find(([t]) => e.includes(t));
-			if (n) {
-				o(n[1], t);
-				continue;
-			}
-			let r = a.find(([t]) => e.endsWith(t));
-			r && o(r[1], t);
-		}
-	}
-	return Array.from(n.values());
-}
-function X(e, t) {
-	return t.map((t) => `${e} ${t}`).join(",");
-}
-async function Z(e) {
-	return (await Promise.all(e.map(async ({ icon: e, labels: t }) => {
-		let n = t.map((e) => `[data-title='${e}']::before`);
-		if (typeof e == "string") {
-			if (!e) return "";
-			let t = await Q(e);
-			return `
-${n.join(",")} {
-  content: '';
-  --icon: url("data:image/svg+xml,${t}");
-}`;
-		}
-		let r = [];
-		if (e.light) {
-			let t = await Q(e.light), i = X("", n);
-			r.push(`
-${i} {
-  content: '';
-  --icon: url("data:image/svg+xml,${t}");
-}`);
-		}
-		if (e.dark) {
-			let t = await Q(e.dark), i = X("html.dark", n);
-			r.push(`
-${i} {
-  content: '';
-  --icon: url("data:image/svg+xml,${t}");
-}`);
-		}
-		return r.join("");
-	}))).sort().join("");
-}
-async function Q(e) {
-	if (!e) return "";
-	if (e.startsWith("<svg")) return q(e);
-	if (Ne.test(e)) try {
-		return q(await (await fetch(e)).text());
-	} catch {
-		return console.warn(`[vitepress-plugin-group-icons]: Failed to fetch icon: ${e}`), "";
-	}
-	let [t, n] = e.split(":");
-	try {
-		let { icons: e } = E(import.meta.url)(`@iconify-json/${t}`), r = ge(e, n);
-		if (r) {
-			let { attributes: e, body: t } = Ce(r);
-			return q(Te(t, e));
-		}
-		return "";
-	} catch {
-		return console.warn(`[vitepress-plugin-group-icons]: Icon set \`${t}\` not found. Please install \`@iconify-json/${t}\` first`), "";
-	}
-}
-var Le = /&(?:lt|#60);/g, Re = /&(?:gt|#62);/g, ze = /&(?:quot|#34);/g, Be = /&(?:apos|#39);/g, Ve = /&(?:amp|#38);/g, $ = /\bdata-title=\\"([^"]*)\\"|\bdata-title="([^"]*)"|"data-title":\s*"([^"]*)"/g, He = /\.(md|md\?vue|md\?v=)$/;
-function Ue(e) {
-	return e.replaceAll(Le, "<").replaceAll(Re, ">").replaceAll(ze, "\"").replaceAll(Be, "'").replaceAll(Ve, "&");
-}
-function We(e) {
-	let t = "virtual:group-icons.css", n = `\0${t}`, r = /* @__PURE__ */ new Set(), i = /* @__PURE__ */ new Set(), a;
-	e ||= { customIcon: {} };
-	function o() {
-		let e = a?.moduleGraph.getModuleById(n);
-		e && (a.moduleGraph.invalidateModule(e), a.reloadModule(e));
-	}
-	return {
-		name: "vitepress-plugin-group-icons",
-		enforce: "post",
-		resolveId(e) {
-			if (e === t) return n;
-		},
-		configureServer(e) {
-			a = e;
-		},
-		async load(t) {
-			if (t === n) {
-				let { css: t } = await Pe(r, e);
-				return i = new Set(r), t;
-			}
-		},
-		transform: {
-			filter: { id: He },
-			handler(e) {
-				for ($.lastIndex = 0;;) {
-					let t = $.exec(e);
-					if (!t) break;
-					r.add(Ue(t[1] || t[2] || t[3]));
-				}
-				Oe(r, i) || o();
-			}
-		}
-	};
-}
 //#endregion
 //#region src/vp-config.ts
-var Ge = {
+var ne = {
 	themeConfig: {
 		docFooter: {
 			prev: !1,
@@ -1203,16 +887,9 @@ var Ge = {
 			light: "light-plus"
 		},
 		config(e) {
-			e.use(Me);
+			e.use(te);
 		}
-	},
-	vite: {
-		resolve: { alias: [{
-			find: /^.*\/VPSidebarGroup\.vue$/,
-			replacement: O(new D("data:application/octet-stream;base64,PHNjcmlwdCBzZXR1cCBsYW5nPSJ0cyI+CmltcG9ydCB7IFFFeHBhbnNpb25JdGVtLCBRTGlzdCB9IGZyb20gInF1YXNhciI7CmltcG9ydCB7IGNvbXB1dGVkIH0gZnJvbSAidnVlIjsKaW1wb3J0IFNpZGViYXJJdGVtIGZyb20gIi4vU2lkZWJhckl0ZW0udnVlIjsKaW1wb3J0IHR5cGUgeyBUU2lkZWJhckVudHJ5IH0gZnJvbSAiLi4vdHlwZXMiOwoKLy8gcHJvcHMKY29uc3QgcHJvcHNDb21wb25lbnQgPSBkZWZpbmVQcm9wczx7CiAgaXRlbXM6IFRTaWRlYmFyRW50cnlbXTsKfT4oKTsKCi8vIGZ1bmN0aW9ucwpmdW5jdGlvbiBpc09wZW5lZChpdGVtOiBUU2lkZWJhckVudHJ5KTogYm9vbGVhbiB7CiAgcmV0dXJuIChpdGVtLml0ZW1zID8/IFtdKS5maW5kKChpKSA9PiBpLmFjdGl2ZSB8fCBpc09wZW5lZChpKSkgIT09IHVuZGVmaW5lZDsKfQoKLy8gY29tcHV0ZWRzCmNvbnN0IG1lbnVzID0gY29tcHV0ZWQoKCkgPT4gewogIC8vIHd0ZiBWaXRlUHJlc3MKICBpZiAocHJvcHNDb21wb25lbnQuaXRlbXNbMF0udGV4dCA9PT0gdW5kZWZpbmVkKSB7CiAgICByZXR1cm4gWwogICAgICAuLi4ocHJvcHNDb21wb25lbnQuaXRlbXNbMF0uaXRlbXMgPz8gW10pLAogICAgICAuLi5wcm9wc0NvbXBvbmVudC5pdGVtcy5zbGljZSgxKSwKICAgIF07CiAgfQogIHJldHVybiBwcm9wc0NvbXBvbmVudC5pdGVtczsKfSk7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxxLWxpc3Q+CiAgICA8ZGl2IHYtZm9yPSJpdGVtIG9mIG1lbnVzIiA6a2V5PSJpdGVtLnRleHQiPgogICAgICA8cS1leHBhbnNpb24taXRlbQogICAgICAgIHYtaWY9IihpdGVtLml0ZW1zPy5sZW5ndGggPz8gMCkgPiAwIgogICAgICAgIDpkZWZhdWx0LW9wZW5lZD0iaXNPcGVuZWQoaXRlbSkiCiAgICAgICAgOmljb249Iml0ZW0uaWNvbiA/PyAnJyIKICAgICAgICA6bGFiZWw9Iml0ZW0udGV4dCA/PyAnPz8/JyIKICAgICAgICBoZWFkZXJDbGFzcz0ibWVudS1pdGVtIgogICAgICAgIGNsYXNzPSJtZW51LWV4cGFuZGFibGUiCiAgICAgICAgZ3JvdXA9Imdyb3VwQWNjb3JkaW9uTW9kZSIKICAgICAgPgogICAgICAgIDxTaWRlYmFyR3JvdXAgOml0ZW1zPSJpdGVtLml0ZW1zISIgLz4KICAgICAgPC9xLWV4cGFuc2lvbi1pdGVtPgoKICAgICAgPFNpZGViYXJJdGVtIHYtZWxzZSA6aXRlbT0iaXRlbSIgLz4KICAgIDwvZGl2PgogIDwvcS1saXN0Pgo8L3RlbXBsYXRlPgo=", "" + import.meta.url))
-		}] },
-		plugins: [We()]
 	}
 };
 //#endregion
-export { B as createBigBangTheme, Ge as vitepressBigBangConfig };
+export { J as createBigBangTheme, ne as vitepressBigBangConfig };
