@@ -154,7 +154,7 @@ body {
         transition: all 0.25s;
       }
       p:hover {
-        color: var(--menu-item-active-color) !important;
+        color: var(--menu-item-color-hover) !important;
         background-color: var(--menu-item-active-color) !important;
       }
     }
