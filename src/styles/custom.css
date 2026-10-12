@@ -37,19 +37,20 @@ body {
 /* PAGES */
 .VPDoc {
   padding-top: 0px;
+  padding: 1rem 2rem 0;
   &.has-aside .content-container {
     max-width: 830px;
   }
 }
 .vp-doc h1 {
-  font-size: 1.48rem;
+  font-size: 1.65rem;
   line-height: 1.2;
   letter-spacing: 0;
   font-weight: 600;
   margin: 14px 0;
 }
 .vp-doc h2 {
-  font-size: 1.09rem;
+  font-size: 1.30rem;
   line-height: 1.2;
   letter-spacing: 0;
   font-weight: 600;
@@ -61,7 +62,7 @@ body {
   }
 }
 .vp-doc h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.1;
   letter-spacing: 0;
   font-weight: 600;
@@ -92,6 +93,9 @@ body {
 }
 .custom-block-title {
   display: none;
+}
+.aside {
+  background-color: var(--page-background);
 }
 .aside-curtain {
   background: var(--page-background);
@@ -135,15 +139,22 @@ body {
     border-color: var(--field-border-color-hover)
   }
 }
-.VPNavBarSearch {
+/* .VPNavBarSearch {
   padding-left: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
-}
+} */
 .VPSidebar {
   border-right: 1px solid var(--border-color);
   padding-right: 0.8rem;
+}
+.VPSidebarItem {
+  font-weight: 500;
+  color: var(--menu-item-color);
+  &:hover {
+    color: var(--menu-item-color-hover);
+  }
 }
 .VPDocOutlineItem {
   padding-left: 10px;
@@ -157,13 +168,7 @@ body {
   font-size: 0.8rem;
   font-weight: 500;
 }
-.menu-item {
-  font-weight: 500;
-  color: var(--menu-item-color);
-  &:hover {
-    color: var(--menu-item-color-hover);
-  }
-}
+
 
 .menu-item-active {
   color: var(--primary-text-color) !important;

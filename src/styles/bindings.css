@@ -10,6 +10,7 @@
   --vp-c-bg-soft: var(--card-background);
   --vp-c-bg-alt: var(--field-background);
   --vp-c-default-soft: var(--hover-background);
+  --vp-c-bg-elv: var(--card-background);
 
   --docsearch-search-button-background: var(--card-background);
 
