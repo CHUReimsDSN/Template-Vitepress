@@ -18,12 +18,12 @@ export default defineConfig({
     },
     rolldownOptions: {
       external: [
-        "vue",
-        "quasar",
-        "vitepress",
-        "node:url",
-        "@localSearchIndex",
-        "@siteData"
+        /^vue$/,
+        /^quasar$/,
+        /^vitepress(\/.*)?$/,
+        /^node:.*/,
+        /^@localSearchIndex$/,
+        /^@siteData$/,
       ],
     },
   },
