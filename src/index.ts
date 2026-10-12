@@ -1,8 +1,2 @@
-import Layout from './components/Layout.vue'
-import "virtual:group-icons.css";
-import "./style.scss";
-
-export * from './types'
-export { setupVitepressBigBangTheme } from './vp-theme'
-export { vitepressBigBangConfig } from './vp-config'
-export { Layout }
+export { createBigBangTheme } from './vp-theme.js'
+export { vitepressBigBangConfig } from './vp-config.js'

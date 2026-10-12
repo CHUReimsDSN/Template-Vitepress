@@ -5,13 +5,18 @@ import {
   type TPrimaryLabel,
   type TSurfaceLabel,
 } from "quasar-app-extension-big-bang";
+import DefaultTheme from "vitepress/theme";
+import Layout from "./components/Layout.vue";
+import type { Theme } from "vitepress";
 
-export function setupVitepressBigBangTheme(
+export type BigBangThemeOptions = {
+  primary?: TPrimaryLabel;
+  surface?: TSurfaceLabel;
+};
+
+function setupVitepressBigBangTheme(
   app: App,
-  options?: {
-    primary?: TPrimaryLabel;
-    surface?: TSurfaceLabel;
-  },
+  options?: BigBangThemeOptions,
 ) {
   app.use(Quasar, {
     plugins: { Dark },
@@ -31,3 +36,17 @@ export function setupVitepressBigBangTheme(
   BigBangTheme.setSurface(options.surface);
   BigBangTheme.setupDefaultProps();
 }
+
+export function createBigBangTheme(
+  options: BigBangThemeOptions = {},
+): Theme {
+  return {
+    extends: DefaultTheme,
+    Layout,
+    enhanceApp({ app }) {
+      setupVitepressBigBangTheme(app, options);
+    },
+  };
+}
+
+export default createBigBangTheme();

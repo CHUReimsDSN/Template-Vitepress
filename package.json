@@ -1,6 +1,6 @@
 {
   "name": "vitepress-bigbang",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "Vitepress BigBangTheme",
   "devDependencies": {
     "@quasar/extras": "^2.1.0",
