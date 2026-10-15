@@ -29,7 +29,7 @@ export function computeSidebar() {
         const item = { text: title, icon, link: link, active: false, collapsed: false };
         entries.push(item);
       } else {
-        if (fs.lstatSync(indexFilePath).isFile()) {
+        if (fs.lstatSync(path.join(folderAbsPath, dirEntry)).isFile()) {
           continue
         }
         const item = { text: "???", items: [], icon: undefined, active: false, collapsed: false };
