@@ -29,10 +29,13 @@ export function computeSidebar() {
         const item = { text: title, icon, link: link, active: false, collapsed: false };
         entries.push(item);
       } else {
+        if (fs.lstatSync(indexFilePath).isFile()) {
+          continue
+        }
         const item = { text: "???", items: [], icon: undefined, active: false, collapsed: false };
         const filePath = path.join(folderAbsPath, dirEntry);
         const indexFilePath = path.join(folderAbsPath, dirEntry, "root.md");
-        if (fs.existsSync(indexFilePath) && !fs.lstatSync(indexFilePath).isFile()) {
+        if (fs.existsSync(indexFilePath)) {
           const content = fs.readFileSync(indexFilePath, "utf-8");
           if (content.match(/^\s*exclude:\s*(.+)$/m)?.[1]?.trim() === 'true' ) {
             continue
