@@ -34,7 +34,7 @@
   --vp-code-color: var(--primary-color);
   --vp-code-block-bg: var(--card-background);
   --vp-code-copy-code-border-color: var(--field-border-color);
-  --vp-code-copy-code-bg: var(--field-background);
+  --vp-code-copy-code-bg: var(--card-background);
   --vp-code-copy-code-hover-border-color: var(--field-border-color-hover);
   --vp-code-copy-code-hover-bg: var(--field-background);
   --vp-code-lang-color: var(--surface-500);
