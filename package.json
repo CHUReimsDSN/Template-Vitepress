@@ -1,0 +1,27 @@
+{
+  "name": "vitepress-bigbang",
+  "version": "1.0.1",
+  "description": "Vitepress BigBangTheme",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vite-plugin-dts": "^5.1.2"
+  },
+  "type": "module",
+  "author": "JulesDebeaumont <deb.jules@outlook.fr>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style.css": "./src/styles/index.css",
+    "./scripts": "./src-scripts/index.ts"
+  },
+  "scripts": {
+    "build": "vite build"
+  }
+}

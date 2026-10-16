@@ -1,0 +1,60 @@
+:root {
+  --vp-sidebar-bg-color: var(--page-background);
+  --vp-nav-bg-color: var(--page-background);
+
+  --vp-c-brand-1: var(--primary-text-color);
+  --vp-c-brand-2: var(--secondary-text-color);
+  --vp-c-text-1: var(--text-color);
+  --vp-c-text-2: var(--secondary-text-color);
+  --vp-c-divider: transparent;
+  --vp-c-bg-soft: var(--card-background);
+  --vp-c-bg-alt: var(--field-background);
+  --vp-c-default-soft: var(--hover-background);
+  --vp-c-bg-elv: var(--card-background);
+
+  --docsearch-search-button-background: var(--card-background);
+
+  --vp-button-brand-text: var(--btn-text-color);
+  --vp-button-brand-bg: var(--primary-color);
+  --vp-button-brand-hover-text: var(--btn-text-color);
+  --vp-button-brand-hover-bg: var(--primary-hover-color);
+  --vp-button-alt-text: var(--secondary-text-color);
+  --vp-button-alt-bg: var(--secondary-color);
+  --vp-button-alt-hover-text: var(--secondary-text-color);
+  --vp-button-alt-hover-bg: var(--secondary-hover-color);
+
+  --vp-local-search-bg: var(--card-background);
+  --vp-local-search-result-border: var(--card-border-color);
+  --vp-local-search-result-selected-border: var(--primary-color);
+  --vp-local-search-highlight-bg: var(--primary-color);
+  --vp-local-search-highlight-text: var(--btn-text-color);
+  --vp-local-nav-bg-color: var(--page-background);
+
+  --vp-code-bg: var(--card-background);
+  --vp-code-color: var(--primary-color);
+  --vp-code-block-bg: var(--card-background);
+  --vp-code-copy-code-border-color: var(--field-border-color);
+  --vp-code-copy-code-bg: var(--card-background);
+  --vp-code-copy-code-hover-border-color: var(--field-border-color-hover);
+  --vp-code-copy-code-hover-bg: var(--field-background);
+  --vp-code-lang-color: var(--surface-500);
+  --vp-code-tab-bg: var(--card-background);
+  --vp-code-tab-text-color: var(--secondary-text-color);
+  --vp-code-tab-active-text-color: var(--secondary-text-color);
+
+  --vp-layout-max-width: 1570px;
+
+  --vp-sidebar-width: 280px;
+
+  --vp-nav-screen-bg-color: var(--page-background);
+  --vp-nav-logo-height: 1.8rem;
+
+  --vp-custom-block-warning-bg: var(--warning-background-alt-color);
+  --vp-custom-block-warning-text: var(--secondary-text-color);
+  --vp-custom-block-danger-bg: var(--negative-background-alt-color);
+  --vp-custom-block-danger-text: var(--secondary-text-color);
+  --vp-custom-block-tip-bg: var(--info-background-alt-color);
+  --vp-custom-block-tip-text: var(--secondary-text-color);
+  --vp-custom-block-info-bg: var(--info-background-alt-color);
+  --vp-custom-block-info-text: var(--secondary-text-color);
+}
