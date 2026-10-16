@@ -10,7 +10,6 @@ Theme pour Vitepress avec style de Quasar BigBang.
 },
 ```
 
-
 ## Utilisation du thème
 
 ```ts
@@ -30,6 +29,21 @@ export default defineConfig(
 );
 ```
 
+```ts
+// .vitepress/theme.index.ts
+import DefaultTheme from "vitepress/theme";
+import { ThemePicker } from "vitepress-bigbang";
+import "vitepress-bigbang/style.css";
+
+export default {
+  extends: DefaultTheme,
+  enhanceApp() {
+    ThemePicker.setPrimary("Cyan");
+    ThemePicker.setSurface("Slate");
+  },
+};
+```
+
 ## Utilisations des scripts
 
 ```ts
@@ -47,8 +61,8 @@ computeApiDefinition();
 computeSidebar();
 computeVersion({ mode: "package.json" });
 computeIndexMd({
-  primary: 'Sky',
-  surface: 'Slate'
+  primary: "Sky",
+  surface: "Slate",
 });
 console.log("🎉 Compute done");
 ```
